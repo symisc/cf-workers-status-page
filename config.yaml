@@ -6,7 +6,7 @@ settings:
   collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
 
   allmonitorsOperational: 'All Services Operational'
-  notAllmonitorsOperational: 'Issues Operational'
+  notAllmonitorsOperational: 'Partial Service(s) disruption'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Ongoing Issue'
   monitorLabelNoData: 'No data'
