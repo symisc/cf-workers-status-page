@@ -1,37 +1,48 @@
 settings:
-  title: 'FACEIO Services Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  title: 'Public Services Status Monitoring - FACEIO'
+  url: 'https://status.faceio.net' # used for Slack messages
   logo: logo.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
+  allmonitorsOperational: 'All Services Operational'
+  notAllmonitorsOperational: 'Issues Operational'
   monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
+  monitorLabelNotOperational: 'Ongoing Issue'
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  dayInHistogramOperational: 'All Set'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: api-faceio # unique identifier
+    name: api.faceio.net
+    description: 'FACEIO Public APIs.' # default=empty
+    url: 'https://api.faceio.net/status' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: faceio-console
+    name: FACEIO Console
+    url: 'https://console.faceio.net/'
     method: GET
     expectStatus: 200
-
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+    
+  - id: faceio-cdn
+    name: FACEIO Content Delivery Network (CDN)
+    url: 'https://cdn.faceio.net/'
+    method: GET
+    expectStatus: 200
+    
+  - id: pixlab-api
+    name: PixLab Public APIs
+    url: 'http://api.pixlab.io/status'
+    method: GET
+    expectStatus: 200
+    
+  - id: blog-pixlab
+    name: The PixLab/FACEIO Blog
+    url: 'https://blog.pixlab.io/'
     method: GET
     expectStatus: 200
