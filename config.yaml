@@ -1,5 +1,5 @@
 settings:
-  title: 'Services Monitoring - FACEIO Status Page'
+  title: 'Services Monitoring - FACEIO Status Dashboard'
   url: 'https://status.faceio.net' # used for Slack messages
   logo: logo.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -23,6 +23,14 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
+ -  id: widget-faceio # unique identifier
+    name: 'FACEIO Widget Routing'
+    description: 'FACEIO Widget Routing & instantiation Service'
+    url: 'https://widget.faceio.net/status/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    
   - id: faceio-console
     name: 'FACEIO Console'
     description: 'FACEIO Web Administration Dashboard'
