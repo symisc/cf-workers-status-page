@@ -23,7 +23,7 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
- -  id: widget-faceio # unique identifier
+  - id: widget-faceio # unique identifier
     name: 'FACEIO Widget Routing'
     description: 'Widget Routing and instantiation Service'
     url: 'https://widget.faceio.net/status/' # URL to fetch
