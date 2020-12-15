@@ -1,5 +1,5 @@
 settings:
-  title: 'Public Services Monitoring - FACEIO Status Page'
+  title: 'Services Monitoring - FACEIO Status Page'
   url: 'https://status.faceio.net' # used for Slack messages
   logo: logo.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
