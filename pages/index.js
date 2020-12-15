@@ -100,12 +100,12 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
             </a>
           </div>
           <div>
-            <a
+            /*<a
               href="https://github.com/eidam/cf-workers-status-page"
               target="_blank"
             >
               Get Your Status Page
-            </a>
+            </a>*/
           </div>
         </div>
       </div>
