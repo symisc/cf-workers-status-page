@@ -30,14 +30,14 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    
+
   - id: faceio-console
     name: 'FACEIO Console'
     description: 'FACEIO Web Administration Dashboard'
     url: 'https://console.faceio.net/'
     method: GET
     expectStatus: 200
-    
+
   - id: faceio-cdn
     name: 'FACEIO CDN'
     description: 'FACEIO Content Delivery Network (CDN)'
