@@ -25,7 +25,7 @@ monitors:
 
   - id: widget-faceio # unique identifier
     name: 'FACEIO Widget Routing'
-    description: 'Widget Routing and instantiation Service'
+    description: 'Widget Routing & Instantiation Endpoint'
     url: 'https://widget.faceio.net/status/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
