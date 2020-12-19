@@ -34,7 +34,7 @@ monitors:
   - id: faceio-console
     name: 'FACEIO Console'
     description: 'FACEIO Web Administration Dashboard'
-    url: 'https://console.faceio.net/'
+    url: 'https://console.faceio.net/status/'
     method: GET
     expectStatus: 200
 
