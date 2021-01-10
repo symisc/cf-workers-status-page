@@ -48,7 +48,7 @@ monitors:
   - id: pixlab-api
     name: 'PixLab Public APIs'
     description: 'PixLab Public API - https://api.pixlab.io/status.'
-    url: 'https://api.pixlab.io/status'
+    url: 'http://api.pixlab.io/status'
     method: GET
     expectStatus: 200
     
