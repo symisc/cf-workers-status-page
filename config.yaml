@@ -3,7 +3,7 @@ settings:
   url: 'https://status.faceio.net' # used for Slack messages
   logo: logo.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
+  collectResponseTimes: true # experimental feature, enable only for <5 monitors or on paid plans
 
   allmonitorsOperational: 'All Services Operational'
   notAllmonitorsOperational: 'Partial Service(s) disruption'
