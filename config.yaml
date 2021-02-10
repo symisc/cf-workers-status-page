@@ -15,6 +15,13 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: faceio-cdn
+    name: 'FACEIO CDN'
+    description: 'FACEIO Content Delivery Network (CDN)'
+    url: 'https://cdn.faceio.net/'
+    method: GET
+    expectStatus: 200
+    
   - id: widget-faceio # unique identifier
     name: 'FACEIO Widget Routing'
     description: 'Widget Routing & Instantiation Endpoint'
@@ -27,13 +34,6 @@ monitors:
     name: 'FACEIO Console'
     description: 'FACEIO Web Administration Dashboard'
     url: 'https://console.faceio.net/status/'
-    method: GET
-    expectStatus: 200
-
-  - id: faceio-cdn
-    name: 'FACEIO CDN'
-    description: 'FACEIO Content Delivery Network (CDN)'
-    url: 'https://cdn.faceio.net/'
     method: GET
     expectStatus: 200
     
