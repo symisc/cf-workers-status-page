@@ -36,21 +36,6 @@ monitors:
     url: 'https://cdn.faceio.net/'
     method: GET
     expectStatus: 200
-   
-  - id: api-faceio # unique identifier
-    name: 'FACEIO Public APIs'
-    description: 'FACEIO Public APIs - https://api.faceio.net/status'
-    url: 'https://api.faceio.net/status' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    
-  - id: pixlab-api
-    name: 'PixLab Public APIs'
-    description: 'PixLab Public API - https://api.pixlab.io/status.'
-    url: 'http://api.pixlab.io/status'
-    method: GET
-    expectStatus: 200
     
   - id: blog-pixlab
     name: 'The PixLab/FACEIO Blog'
