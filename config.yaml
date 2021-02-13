@@ -37,6 +37,13 @@ monitors:
     method: GET
     expectStatus: 200
     
+  - id: faceio-api
+    name: 'FACEIO Public APIs'
+    description: ''FACEIO Public APIs
+    url: 'https://api.faceio.net/status'
+    method: GET
+    expectStatus: 200
+    
   - id: blog-pixlab
     name: 'The PixLab/FACEIO Blog'
     description: 'Official PixLab | Symisc Systems Blog - Artificial Intelligence News & Resources.'
